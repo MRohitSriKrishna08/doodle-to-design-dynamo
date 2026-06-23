@@ -76,7 +76,7 @@ function Index() {
     reader.readAsDataURL(file);
   }, []);
 
-  const onDrop = (e: React.DragEvent<HTMLDivElement>) => {
+  const onDrop = (e: React.DragEvent<HTMLLabelElement>) => {
     e.preventDefault();
     const f = e.dataTransfer.files?.[0];
     if (f) handleFile(f);
