@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Ink2Interface" },
+      { name: "description", content: "Transform hand-drawn UI sketches into functional websites with this AI-powered generator." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Ink2Interface" },
+      { property: "og:description", content: "Transform hand-drawn UI sketches into functional websites with this AI-powered generator." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Ink2Interface" },
+      { name: "twitter:description", content: "Transform hand-drawn UI sketches into functional websites with this AI-powered generator." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89ce90f8-cf09-425d-b4cd-bc5cf953f9b3/id-preview-d1867885--4f7cb50c-5c73-49f5-844e-6fe8c7422651.lovable.app-1782199077000.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89ce90f8-cf09-425d-b4cd-bc5cf953f9b3/id-preview-d1867885--4f7cb50c-5c73-49f5-844e-6fe8c7422651.lovable.app-1782199077000.png" },
     ],
     links: [
       {
