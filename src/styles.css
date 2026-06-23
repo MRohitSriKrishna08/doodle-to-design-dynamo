@@ -133,12 +133,35 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
-  }
-
+  :root { color-scheme: dark; }
+  * { border-color: var(--color-border); }
+  html, body, #root { height: 100%; }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
+}
+
+/* Force dark theme app-wide */
+:root {
+  --background: oklch(0.16 0.02 265);
+  --foreground: oklch(0.97 0.01 250);
+  --card: oklch(0.21 0.025 265);
+  --card-foreground: oklch(0.97 0.01 250);
+  --popover: oklch(0.21 0.025 265);
+  --popover-foreground: oklch(0.97 0.01 250);
+  --primary: oklch(0.72 0.18 295);
+  --primary-foreground: oklch(0.15 0.02 265);
+  --secondary: oklch(0.28 0.03 265);
+  --secondary-foreground: oklch(0.97 0.01 250);
+  --muted: oklch(0.25 0.025 265);
+  --muted-foreground: oklch(0.72 0.03 260);
+  --accent: oklch(0.32 0.05 285);
+  --accent-foreground: oklch(0.97 0.01 250);
+  --destructive: oklch(0.65 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 250);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.72 0.18 295);
 }
